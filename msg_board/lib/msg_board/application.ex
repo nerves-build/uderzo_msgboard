@@ -10,6 +10,7 @@ defmodule MsgBoard.Application do
     children = [
       # Starts a worker by calling: MsgBoard.Worker.start_link(arg)
       # {MsgBoard.Worker, arg},
+      {MsgBoard.Engine, %{text: "Hello World!!"}}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
